@@ -1,0 +1,41 @@
+.quote-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+  padding: 24px;
+}
+
+.quote {
+  font-size: 12px;
+  line-height: 22px;
+  color: gray;
+  font-weight: 400;
+}
+.author {
+  color: gray;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.refresh-img {
+  align-self: flex-start;
+  background-color: gray;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .quote-section {
+    margin-left: 72px;
+    margin-top: 60px;
+  }
+  .quote {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .author {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

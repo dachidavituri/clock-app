@@ -1,38 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100vw;
   min-height: 100vh;
+  background-image: url("./assets/mobile/bg-image-daytime.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+.evening {
+  background-image: url("./assets/mobile/bg-image-nighttime.jpg");
+}
+.evening .grey{
+  background-color: #000000;
+}
+.evening .quote {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.evening .author {
+  color: white;
+}
+.evening .section p{
+  color: white;
+}
+.evening .section h2{
+  color: white;
+}
+.evening .quote{
+  color: white;
+}
+.empty {
+  height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 450px) {
+  .App {
+    background-image: url("assets/tablet/bg-image-daytime.jpg");
   }
-  to {
-    transform: rotate(360deg);
+  .evening {
+    background-image: url("./assets/tablet/bg-image-nighttime.jpg");
+  }
+}
+@media  screen and (min-width: 768px) {
+  .empty {
+    height: 0;
+  }
+  
+}
+@media screen and (min-width: 800px) {
+  .App {
+    background-image: url("assets/desktop/bg-image-daytime.jpg");
+    /* padding: 50px 200px; */
+  }
+ 
+  .evening {
+    background-image: url("./assets/desktop/bg-image-nighttime.jpg");
   }
 }

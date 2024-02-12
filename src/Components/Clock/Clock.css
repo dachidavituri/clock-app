@@ -1,0 +1,102 @@
+
+.info-section {
+  padding: 26px;
+}
+.greet-section {
+  display: flex;
+  gap: 10px;
+}
+.greet {
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+}
+.time {
+  font-size: 100px;
+  color: white;
+  font-weight: 700;
+}
+.time-section {
+  display: flex;
+}
+.bst {
+  color: white;
+  align-self: flex-end;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.city {
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+button {
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 115px;
+  height: 39px;
+  border: none;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Inter";
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  justify-content: space-around;
+}
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px){
+  .info-section{
+    padding: 72px;
+  }
+  .time{
+    font-size: 150px;
+  }
+  .bst{
+    font-size: 32px;
+  }
+  button{
+    border-radius: 28px;
+  }
+  
+}
+@media screen and (min-width: 1024px)
+{
+  .container{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+  .time{
+    font-size: 175px;
+  }
+  .greet{
+    font-size: 20px;
+  }
+  .city{
+    font-size: 24px;
+  }
+  .greet:after{
+    content: ' it,s currently';
+
+  }
+
+}
